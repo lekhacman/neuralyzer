@@ -1,0 +1,57 @@
+{
+  "name": "neuralyzer",
+  "version": "0.0.1",
+  "description": "A Chrome plugin that has the ability to bring the kiosk back to its homepage from any other websites",
+  "repository": "git@github.com:lekhacman/neuralyzer.git",
+  "author": "Le Khac Man <lekhacman@outlook.com>",
+  "private": true,
+  "scripts": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.1.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:jest/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "jest",
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ]
+    },
+    "globals": {
+      "jest": true
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.js"
+        ],
+        "rules": {
+          "no-unused-vars": "off",
+          "no-global-assign": "off"
+        }
+      }
+    ]
+  }
+}
