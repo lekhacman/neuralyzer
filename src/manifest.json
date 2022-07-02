@@ -1,7 +1,7 @@
 {
   "name": "Neuralyzer",
   "description": "A Chrome plugin that has the ability to bring the kiosk back to its homepage from any other websites",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "permissions": [
     "storage"

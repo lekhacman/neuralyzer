@@ -10,4 +10,6 @@
     left: 5px;
     z-index: 101;
 }
-
+@media print {
+    #neuralyzerBtn { display: none }
+}
