@@ -1,8 +1,6 @@
-// if (!chrome.storage) {
-//   chrome = { storage: { sync: { get: noop, set: noop } } };
-// }
-// function noop() {}
-chrome.storage.sync.get(['url'], function (config) {
+import './options.css';
+import { OPTION_KEYS } from '../constants';
+chrome.storage.sync.get(OPTION_KEYS, function (config) {
   document.getElementById('url').value = config.url || '';
 });
 

@@ -1,5 +1,8 @@
-chrome.storage.sync.get(['url'], function ({ url }) {
-  console.log(`Neuralyzer URL: ${url}`);
+import '../manifest';
+import './neuralyzer.css';
+import { OPTION_KEYS } from '../constants';
+
+chrome.storage.sync.get(OPTION_KEYS, function ({ url }) {
   const dot = document.createElement('i');
   dot.id = 'neuralyzerBtn';
   dot.onclick = clickerOf({
