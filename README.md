@@ -6,7 +6,7 @@ A Chrome plugin that has the ability to bring the kiosk back to its homepage fro
 ## User guide: How to
 
 ### Setup
-1. Download [Neuralyzer](https://github.com/lekhacman/neuralyzer/archive/refs/heads/master.zip) and unzip file on the kiosk.
+1. Download [Neuralyzer](https://github.com/lekhacman/neuralyzer/archive/refs/heads/clients/khaos.zip) and unzip file on the kiosk.
 2. Open Chrome browser and type [chrome://extensions](chrome://extensions) on the address bar.
 3. Turn on `Developer mode` (usually in the top right corner).
 4. Congrats! You are now a 'developer'. Now click on `Load unpacked` button and point to the neuralyzer folder 

@@ -13,3 +13,23 @@
 @media print {
     #neuralyzerBtn { display: none }
 }
+
+#neuralyzerMsg {
+    background: linear-gradient(#aeeaeb, white 20%);
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    font-size: 30px;
+    left: 0;
+    padding: 15vh 20vw;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+#neuralyzerMsg > img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}

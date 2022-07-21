@@ -78,6 +78,10 @@ function neuralyzerConfig(env) {
           test: /manifest/,
           loader: './config/manifest-loader.js',
         },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/inline',
+        },
       ],
     },
     plugins,

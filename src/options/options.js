@@ -1,7 +1,9 @@
 import './options.css';
 import { OPTION_KEYS } from '../constants';
 chrome.storage.sync.get(OPTION_KEYS, function (config) {
-  document.getElementById('url').value = config.url || '';
+  OPTION_KEYS.forEach(
+    (key) => (document.getElementById(key).value = config[key] || '')
+  );
 });
 
 document.getElementById('configuration').onsubmit = function (event) {

@@ -1,12 +1,13 @@
 {
   "name": "neuralyzer",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A Chrome plugin that has the ability to bring the kiosk back to its homepage from any other websites",
   "repository": "git@github.com:lekhacman/neuralyzer.git",
   "author": "Le Khac Man <lekhacman@outlook.com>",
   "private": true,
   "scripts": {
     "build": "webpack build",
+    "zip": "node config/zip.js",
     "start:options": "webpack serve --config-name optionsPage",
     "start:neuralyzer": "webpack serve --config-name neuralyzerConfig"
   },
