@@ -6,6 +6,7 @@
   "author": "Le Khac Man <lekhacman@outlook.com>",
   "private": true,
   "scripts": {
+    "test": "jest src",
     "build": "webpack build",
     "zip": "node config/zip.js",
     "start:options": "webpack serve --config-name optionsPage",
