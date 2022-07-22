@@ -12,7 +12,9 @@ document.getElementById('configuration').onsubmit = function (event) {
     acc,
     { name, value }
   ) {
-    acc[name] = value;
+    if (name) {
+      acc[name] = value;
+    }
     return acc;
   },
   {});
