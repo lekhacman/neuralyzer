@@ -5,7 +5,7 @@ import { subscribeStatus } from './status';
 
 chrome.storage.sync.get(OPTION_KEYS, function (options) {
   document.body.appendChild(createDot(options.url));
-  if (config.statusUrl) {
-    subscribeStatus(config);
+  if (options.statusUrl) {
+    subscribeStatus(options);
   }
 });
