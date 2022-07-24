@@ -6,10 +6,12 @@
   "author": "Le Khac Man <lekhacman@outlook.com>",
   "private": true,
   "scripts": {
+    "test": "jest src",
     "build": "webpack build",
     "zip": "node config/zip.js",
     "start:options": "webpack serve --config-name optionsPage",
-    "start:neuralyzer": "webpack serve --config-name neuralyzerConfig"
+    "start:neuralyzer": "webpack serve --config-name neuralyzerConfig",
+    "version": "node config/version.js"
   },
   "manifest": {
     "manifest_version": 3,
