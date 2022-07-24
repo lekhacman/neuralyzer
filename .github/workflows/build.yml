@@ -32,11 +32,11 @@ jobs:
         run: npm run build
 
       - name: Version
+        id: plugin_version
         run: npm run version
-        id: plugin-version
 
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          name: neuralyzer-${{ env.steps.plugin-version.output }}
+          name: neuralyzer-${{ steps.plugin_version.outputs.plugin_version }}
           path: dist
