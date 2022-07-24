@@ -33,3 +33,8 @@ jobs:
 
       - name: Zip
         run: npm run zip
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: neuralyzer-artifact
+          path: *.zip
