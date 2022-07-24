@@ -31,10 +31,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Zip
-        run: npm run zip
+      - name: Version
+        run: npm run version
+        id: plugin-version
+
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          name: neuralyzer-artifact
-          path: ./*.zip
+          name: neuralyzer-${{ env.steps.plugin-version.output }}
+          path: dist
