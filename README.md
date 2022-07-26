@@ -1,4 +1,6 @@
 # Neuralyzer
+![build](https://github.com/lekhacman/neuralyzer/actions/workflows/build.yml/badge.svg)
+
 A Chrome plugin that has the ability to bring the kiosk back to its homepage from any other websites.
 
 ![Neuralizer](https://duckduckgo.com/i/4b28a7b3.jpg)

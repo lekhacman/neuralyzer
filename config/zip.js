@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
-const { name, version } = require('../package.json');
-const pluginName = `${name}-${version}.zip`;
+const bundle = `${process.env.npm_package_name}-${process.env.npm_package_version}.zip`;
 
-spawn('zip', ['-jrv', pluginName, 'dist']).stdout.pipe(process.stdout);
-console.log(`Exporting ${pluginName}`);
+spawn('zip', ['-jrv', bundle, 'dist']).stdout.pipe(process.stdout);
+console.log(`::set-output name=bundle::${bundle}`);
+console.log(`Exporting ${bundle}`);
