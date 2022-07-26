@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "neuralyzer.js"
+      ],
+      "css": [
+        "neuralyzer.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
